@@ -1,5 +1,5 @@
 # :date: Holidates
-Calculate moving holidays during the academic year in Google Sheets/Google Apps Script. Intended for teachers using GSheets to plan the next year's events. 
+Calculate moving holidays during the academic year in Google Sheets/Google Apps Script. Particularly intended for teachers using GSheets to plan the next year's events. 
 
 ## :pencil2: About
 *"Wait...when is Easter?*" 
