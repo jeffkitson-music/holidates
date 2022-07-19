@@ -1,5 +1,5 @@
 # :date: Holidates
-Calculate holidays during the academic year in Google Sheets/Google Apps Script
+Calculate moving holidays during the academic year in Google Sheets/Google Apps Script
 
 ## :pencil2: About
 *"Wait...when is Easter?*" 
@@ -13,10 +13,6 @@ That phrase is uttered at many end-of-year scheduling meetings when planning the
 - :latin_cross: Easter
 
 **Disclaimer:** *This is a hobby project for a specific use. Holidays were chosen out of necessity rather than exclusion. More holidays that would benefit teachers and schools in a diverse array of cultures and contexts are welcome.*
-
-## :point_right: Alternatives
-- There are already several APIs for this (like [this one](https://holidayapi.com/)) for a somewhat large fee. 
-- Free options like ([this api](https://date.nager.at/Api)) and subscriptable Google Calendars with public holidays are available but might be limited.
 
 ## :tada: Installation and Use
 
@@ -44,5 +40,9 @@ var easter = holidates("easter","2022-2023")
 var easter = Holidates.holidates("easter","2022-2023")
 ```
 
-## :mega: Shoutouts
+## :point_right: Alternatives
+- There are already several APIs for this (like [this one](https://holidayapi.com/)) for a somewhat large fee. 
+- Free options like ([this api](https://date.nager.at/Api)) and subscriptable Google Calendars with public holidays are available but might be limited.
 
+## :mega: Shoutouts
+- Sources are credited as much as possible in the code itself.
