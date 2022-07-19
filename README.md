@@ -16,9 +16,12 @@ That phrase is uttered at many end-of-year scheduling meetings when planning the
 
 ## :tada: Installation and Use
 
-### Installation
-*coming soon..*
-See: InstallHolidates.MD
+### Basic Installation
+If you are unfamiliar with App Script, follow these steps to use Holidates:
+- In Google Sheets, click "Extensions" then "Apps Script"
+- Cut/paste all of the code from holidates.gs in this repo into Apps Script (below myFunction())
+- Click save
+- You will now be able to use the custom function =holidates in your sheet 
 
 
 ### Use as a Custom Function in Google Sheets
