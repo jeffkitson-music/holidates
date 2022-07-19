@@ -57,7 +57,7 @@ Not all holidays float. For fixed date holidays, use the =DATE function.
 =DATE(2022,12,25)
 
 // Example: Your academic year is in cell A1
-=DATE(A1,12,25
+=DATE(A1,12,25)
 ```
 
 ## :muscle: Need Something Stronger?
