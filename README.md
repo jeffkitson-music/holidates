@@ -1,5 +1,5 @@
 # :date: Holidates
-Calculate moving holidays during the academic year in Google Sheets/Google Apps Script
+Calculate moving holidays during the academic year in Google Sheets/Google Apps Script. Intended for teachers using GSheets to plan the next year's events. 
 
 ## :pencil2: About
 *"Wait...when is Easter?*" 
@@ -31,7 +31,11 @@ If you are unfamiliar with App Script, follow these steps to use Holidates:
 
 **Example:**
 ```
-=holidates("easter","2022-2023")
+=holidates("easter","2023")
+
+or 
+
+=holidates("easter","2022-2023") 
 ```
 
 ### Use in Apps Script
