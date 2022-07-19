@@ -56,8 +56,28 @@ Not all holidays float. For fixed date holidays, use the =DATE function.
 //Use DATE(year,month,day)
 =DATE(2022,12,25)
 
-// Example: Your academic year is in cell A1
+// Example: The current year (e.g. 2022) is in cell A1
 =DATE(A1,12,25)
+
+// Example: Your academic year is in cell A1 (e.g. 2022-2023)
+
+//  First semester (left four characters)
+=DATE(LEFT(A1,4),12,25)
+
+//  Second semester (right four characters)
+=DATE(RIGHT(A1,4),5,1)
+```
+
+### In Apps Script
+Dates in Apps Script/JavaScript can get complicated quickly. You can read the [documentation](https://developers.google.com/google-ads/scripts/docs/features/dates) to learn more. If you get frustrated, watch [this](https://www.youtube.com/watch?v=-5wpm-gesOY).
+```javascript
+
+// Dates in Apps Script/JavaScript can be complicated
+var schoolStarts = new Date("September 1, 2022");
+var fallYear = schoolStarts.getFullYear(); 
+var springYear = fallYear + 1
+var halloween = new Date("October 31,"+fallYear.toString()); // the comma is important!
+var stPatrick = new Date("March 17,"+springYear.toString());
 ```
 
 ## :muscle: Need Something Stronger?
