@@ -12,12 +12,12 @@ That phrase is uttered at many end-of-year scheduling meetings when planning the
 - :busts_in_silhouette: Dr. Martin Luther King, Jr. Day
 - :latin_cross: Easter
 
-**Disclaimer:** *This is a hobby project for a specific use. Holidays were chosen out of necessity rather than exclusion. More holidays that would benefit teachers and schools in a diverse array of cultures and contexts are welcome.*
+**Disclaimer:** *This is a hobby project for a specific use. Every academic calendar is unique. Holidays were chosen out of necessity rather than exclusion. More holidays that would benefit teachers and schools in a diverse array of cultures and contexts are welcome.*
 
 ## :tada: Installation and Use
 
 ### Basic Installation
-If you are unfamiliar with App Script, follow these steps to use Holidates:
+If you are unfamiliar with Apps Script, follow these steps to use Holidates:
 - In Google Sheets, click "Extensions" then "Apps Script"
 - Cut/paste all of the code from holidates.gs in this repo into Apps Script (below myFunction())
 - Click save
