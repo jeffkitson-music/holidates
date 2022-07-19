@@ -26,15 +26,17 @@ If you are unfamiliar with Apps Script, follow these steps to use Holidates:
 
 
 ### Use as a Custom Function in Google Sheets
-**Format:** 
 
-=holidates(holiday, academic_year)
 
 **Example:**
-```
+```swift
+// Format:
+//    =holidates(holiday, academic_year)
+
+// Supports single year
 =holidates("easter","2023")
 
-or 
+// or full academic year 
 
 =holidates("easter","2022-2023") 
 ```
@@ -47,6 +49,13 @@ var easter = holidates("easter","2022-2023")
 // or as a separate library script
 var easter = Holidates.holidates("easter","2022-2023")
 ```
+## :pushpin: What about fixed dates? 
+### As a formula in GSheets
+Not all holidays float. For the fixed 
+```swift
+//Use DATE(year,month,day)
+=DATE(2022,12,25)
+```
 
 ## :muscle: Need Something Stronger?
 - Several APIs (like [Holiday API](https://holidayapi.com/)) are available as a paid service. 
@@ -55,3 +64,4 @@ var easter = Holidates.holidates("easter","2022-2023")
 ## :mega: Shoutouts
 - Sources are credited as much as possible in the code itself.
 - [hebcal.com](https://hebcal.com) for their amazing resources (and [api](https://www.hebcal.com/home/developer-apis)).
+- Tom Scott: [The Problem With Time & Timezones](https://www.youtube.com/watch?v=-5wpm-gesOY)
