@@ -1,5 +1,5 @@
 # :date: Holidates
-Calculate moving holidays during the academic year in Google Sheets/Google Apps Script. Particularly intended for teachers using GSheets to plan the next year's events. 
+Calculate floating/moving holidays during the academic year in Google Sheets/Google Apps Script. Particularly intended for teachers using GSheets to plan the next year's events. 
 
 ## :pencil2: About
 *"Wait...when is Easter?*" 
@@ -11,6 +11,7 @@ That phrase is uttered at many end-of-year scheduling meetings when planning the
 - :heart: Valentine's Day (returns the Friday before if it falls on the weekend for event purposes)
 - :busts_in_silhouette: Dr. Martin Luther King, Jr. Day
 - :latin_cross: Easter
+- :star_of_david: Jewish Holidays (with help from [hebcal.com](https://www.hebcal.com/home/developer-apis)): Passover, Hanukka, Rosh Hashanah, Yom Kippur
 
 **Disclaimer:** *This is a hobby project for a specific use. Every academic calendar is unique. Holidays were chosen out of necessity rather than exclusion. More holidays that would benefit teachers and schools in a diverse array of cultures and contexts are welcome.*
 
@@ -47,9 +48,10 @@ var easter = holidates("easter","2022-2023")
 var easter = Holidates.holidates("easter","2022-2023")
 ```
 
-## :point_right: Alternatives
-- There are already several APIs for this (like [this one](https://holidayapi.com/)) for a somewhat large fee. 
+## :muscle: Need Something Stronger?
+- Several APIs (like [Holiday API](https://holidayapi.com/)) are available as a paid service. 
 - Free options like ([this api](https://date.nager.at/Api)) and subscriptable Google Calendars with public holidays are available but might be limited.
 
 ## :mega: Shoutouts
 - Sources are credited as much as possible in the code itself.
+- [hebcal.com](https://hebcal.com) for their amazing resources (and [api](https://www.hebcal.com/home/developer-apis)).
