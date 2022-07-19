@@ -51,10 +51,13 @@ var easter = Holidates.holidates("easter","2022-2023")
 ```
 ## :pushpin: What about fixed dates? 
 ### As a formula in GSheets
-Not all holidays float. For the fixed 
+Not all holidays float. For fixed date holidays, use the =DATE function. 
 ```swift
 //Use DATE(year,month,day)
 =DATE(2022,12,25)
+
+// Example: Your academic year is in cell A1
+=DATE(A1,12,25
 ```
 
 ## :muscle: Need Something Stronger?
