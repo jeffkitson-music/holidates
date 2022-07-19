@@ -1,14 +1,41 @@
-// Helper Functions
+// Custom Function
+function holidates(holiday, year){
+  // A little cleaning...
+  holiday = holiday.toLowerCase().replace(" ","").trim()
+  year = year.substring(year.length-4) // last four characters so "2023" or "2022-2023" will work.
+  
+  // Get date 
+  switch(holiday) {
+  case "singingvalentines":
+    var v = singingvalentines(year);
+    var date = v["sing"]; // date object of actual date is "vday"
+    break;
+  case "easter":
+    var date = getEaster(year);
+    break;
+  case "thanksgiving":
+    var date = getThanksgivingBreak(year); // Returns Wednesday!
+    break;
+  case "mlk":
+    var date = mlkJR(year);
+    break;
+  default:
+    var date = "Not Found";
+  }
+  //Logger.log(date);
+  return date;
+}
 
+// Helper Functions
 function getWeekdaysInMonth(month,year,weekday) {
   // Formerly "Get Mondays"
   // Now works for any day
   //https://stackoverflow.com/questions/9481158/how-can-i-get-the-4-mondays-of-a-month-with-js
     var d = new Date(month+" 1,"+year)
-        month = d.getMonth(),
-        weekdays = [];
+    month = d.getMonth(),
+    weekdays = [];
 
-    var dayNumber = getDayOffset(weekday)
+    var dayNumber = getDayOffset(weekday);
     
     //d.setDate(1); 
 
@@ -27,27 +54,27 @@ function getWeekdaysInMonth(month,year,weekday) {
 }
 
 function getDayOffset(weekday){
-  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   var offset = days.indexOf(weekday);
-  return offset
+  return offset;
 }
 
 function aySplitter(year) {
-  y = year.split("-")
-  Logger.log(y)
-  return y
-}
+  y = year.split("-");
+  Logger.log(y);
+  return y;
+};
 
 // *** MLK Jr. Day ***
 function mlkJR(year) {
   if (year==null){
-    year = new Date().getFullYear()
-  }
+    year = new Date().getFullYear();
+  };
   
   mondays = getWeekdaysInMonth("January",year,"Monday")
-  mlk = mondays[2] //third monday
+  mlk = mondays[2]; //third monday
 
-  return mlk
+  return mlk;
 }
 
 // *** Valentine's Day ***
@@ -55,41 +82,41 @@ function mlkJR(year) {
 // This is for event purposes. Adjust to your own needs!
 
 function singingvalentines(year){
-  var vdate = new Date("February 14,"+year)
+  var vdate = new Date("February 14,"+year);
 
   // Sunday is 0
-  var dayofweek = vdate.getDay()
+  var dayofweek = vdate.getDay();
 
   // Correct to Friday if VDay falls on Saturday/Sunday
   if (dayofweek == 0) { //Sunday
-    var sing = new Date ("2/12/"+year)
+    var sing = new Date ("2/12/"+year);
   }
   else if (dayofweek == 6){ // Saturday
-    var sing = new Date ("2/13/"+year)
+    var sing = new Date ("2/13/"+year);
   }
   else{
-    var sing = new Date (vdate.getTime())
-  }   
+    var sing = new Date (vdate.getTime());
+  };   
 
-  var cupid = {"sing":sing, "vday":vdate}
-  return cupid 
+  var cupid = {"sing":sing, "vday":vdate};
+  return cupid;
 }
 
 // *** Easter ***
 function getEaster(year){ // year should be int, not string
-  var d = easterMath(year)
-  var month = (d[0]).toString() 
-  var day = (d[1]).toString()
-  year = year.toString()
+  var d = easterMath(year);
+  var month = (d[0]).toString() ;
+  var day = (d[1]).toString();
+  year = year.toString();
   
-  var easterDate = new Date(month+"/"+day+"/"+year)
-  //Logger.log(easterDate)
-  return easterDate
-}
+  var easterDate = new Date(month+"/"+day+"/"+year);
+  //Logger.log(easterDate);
+  return easterDate;
+};
 
 function easterMath(year) {
   //https://gist.github.com/johndyer/0dffbdd98c2046f41180c051f378f343
-  // MONTH needs to be adjusted for javascript
+  // MONTH may need to be adjusted for javascript
   // THIS returns Jan = 1, JS returns Jan = 0 
 
 	var f = Math.floor,
@@ -113,10 +140,9 @@ function easterMath(year) {
 // *** Thanksgiving ***
 function getThanksgiving(year) {
   if (year==null){
-    year = new Date().getFullYear()
+    year = new Date().getFullYear();
   }
-  thursdays = getWeekdaysInMonth("November",year,"Thursday")
-  thanksgiving = thursdays[3] // Fourth Thursday
-  return thanksgiving
-}
-
+  thursdays = getWeekdaysInMonth("November",year,"Thursday");
+  thanksgiving = thursdays[3]; // Fourth Thursday
+  return thanksgiving;
+};
