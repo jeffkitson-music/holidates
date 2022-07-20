@@ -1,7 +1,7 @@
 # :date: Holidates
 Calculate floating/moving holidays during the academic year in Google Sheets/Google Apps Script. Particularly intended for teachers using GSheets to plan the next year's events. 
 
-## :pencil2: About
+## :books: About
 *"Wait...when is Easter?*" 
 
 That phrase is uttered at many end-of-year scheduling meetings when planning the events for the next academic year. Holiday dates are simple, except when they move! Even though academic calendars are usually cylical, many teachers and staff have to manually adjust dates in their calendars/spreadsheets for moving holidays. But there is an easier way - automate (as much as possible) the academic calendar creation process! One sticking point is always holiday dates. Holidates aims to help that.      
