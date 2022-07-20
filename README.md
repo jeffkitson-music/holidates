@@ -23,6 +23,7 @@ That phrase is uttered at many end-of-year scheduling meetings when planning the
 ### Use as a Custom Function in Google Sheets
 
 
+
 **Example:**
 ```swift
 // Format:
@@ -35,6 +36,15 @@ That phrase is uttered at many end-of-year scheduling meetings when planning the
 
 =getHoliday("easter","2022-2023") 
 ```
+### Examples
+| Holiday                     | GSheets Example                           |
+|-----------------------------|-------------------------------------------|
+| Thanksgiving                | =getHoliday("thanksgiving",2022)          |
+| ThanksgivingBreak           | =getHoliday("thanksgivingbreak",A1)       |
+| Martin Luther King, Jr. Day | =getHoliday("mlk","2022-2023")            |
+| Easter (Western)            | =getHoliday("easter","2022-2023")         |
+| Easter (Orthodox)           | =getHoliday("orthodoxeaster","2023")      |
+| Passover                    | =getHoliday("passover",A1)                |
 
 ### Use in Apps Script
 ```javascript
