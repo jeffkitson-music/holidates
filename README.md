@@ -54,7 +54,7 @@ var easter = getHoliday("easter","2022-2023")
 // or as a separate library script
 var easter = Holidates.getHoliday("easter","2022-2023")
 ```
-## :pushpin: What about fixed dates? 
+## :pushpin: What about fixed date holidays? 
 ### As a formula in GSheets
 Not all holidays float. For fixed date holidays, use the =DATE function. 
 ```swift
