@@ -26,23 +26,23 @@ That phrase is uttered at many end-of-year scheduling meetings when planning the
 **Example:**
 ```swift
 // Format:
-//    =holidates(holiday, academic_year)
+//    =getHoliday(holiday, academic_year)
 
 // Supports single year
-=holidates("easter","2023")
+=getHoliday("easter","2023")
 
 // or full academic year 
 
-=holidates("easter","2022-2023") 
+=getHoliday("easter","2022-2023") 
 ```
 
 ### Use in Apps Script
 ```javascript
 // Same script
-var easter = holidates("easter","2022-2023")
+var easter = getHoliday("easter","2022-2023")
 
 // or as a separate library script
-var easter = Holidates.holidates("easter","2022-2023")
+var easter = Holidates.getHoliday("easter","2022-2023")
 ```
 ## :pushpin: What about fixed dates? 
 ### As a formula in GSheets
