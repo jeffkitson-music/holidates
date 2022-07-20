@@ -13,7 +13,7 @@ That phrase is uttered at many end-of-year scheduling meetings when planning the
 - :rabbit2: Easter (both :latin_cross: Western and :orthodox_cross: Orthodox) and Good Friday
 - :star_of_david: Jewish Holidays (with help from [hebcal.com](https://www.hebcal.com/home/developer-apis)): Passover, Hanukka, Rosh Hashanah, Yom Kippur
 
-**Disclaimer:** *This is a hobby project for a specific use. Every academic calendar is unique. Holidays were chosen out of necessity rather than exclusion. More holidays that would benefit teachers and schools in a diverse array of cultures and contexts are welcome.*
+**Disclaimer:** *This is a hobby project for a specific use. Every academic calendar is unique. Originally, holidays were chosen out of necessity rather than exclusion. More holidays that would benefit teachers and schools in a diverse array of cultures and contexts are welcome.*
 
 ## :tada: Installation and Use
 
