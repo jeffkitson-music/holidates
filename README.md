@@ -10,7 +10,7 @@ That phrase is uttered at many end-of-year scheduling meetings when planning the
 - :turkey: Thanksgiving Break (Wed. before Thanksgiving)
 - :heart: Valentine's Day (returns the Friday before if it falls on the weekend for event purposes)
 - :busts_in_silhouette: Dr. Martin Luther King, Jr. Day
-- :rabbit2: Easter (:latin_cross: Western and :orthodox_cross: Orthodox) and Good Friday
+- :rabbit2: Easter (both :latin_cross: Western and :orthodox_cross: Orthodox) and Good Friday
 - :star_of_david: Jewish Holidays (with help from [hebcal.com](https://www.hebcal.com/home/developer-apis)): Passover, Hanukka, Rosh Hashanah, Yom Kippur
 
 **Disclaimer:** *This is a hobby project for a specific use. Every academic calendar is unique. Holidays were chosen out of necessity rather than exclusion. More holidays that would benefit teachers and schools in a diverse array of cultures and contexts are welcome.*
