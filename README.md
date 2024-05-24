@@ -7,11 +7,13 @@ Calculate floating/moving holidays during the academic year in Google Sheets/Goo
 That phrase is uttered at many end-of-year scheduling meetings when planning the events for the next academic year. Holiday dates are simple, except when they move! Even though academic calendars are usually cylical, many teachers and staff have to manually adjust dates in their calendars/spreadsheets for moving holidays. But there is an easier way - automate (as much as possible) the academic calendar creation process! One sticking point is always holiday dates. Holidates aims to help that.      
 
 ## :calendar: Supported Holidays
+- 🇺🇸   Federal holidays in the United States.
 - :turkey: Thanksgiving Break (Wed. before Thanksgiving)
 - :heart: Valentine's Day (returns the Friday before if it falls on the weekend for event purposes)
 - :busts_in_silhouette: Dr. Martin Luther King, Jr. Day
 - :rabbit2: Easter (both :latin_cross: Western and :orthodox_cross: Orthodox) and Good Friday
 - :star_of_david: Jewish Holidays (with help from [hebcal.com](https://www.hebcal.com/home/developer-apis)): Passover, Hanukka, Rosh Hashanah, Yom Kippur
+- ☪️ Ramadan (Islam) (with help from the [U.S. Naval Observatory](https://aa.usno.navy.mil/data/api#islamiccal)
 
 **Disclaimer:** *This is a hobby project for a specific use. Every academic calendar is unique. Originally, holidays were chosen out of necessity rather than exclusion. More holidays that would benefit teachers and schools in a diverse array of cultures and contexts are welcome.*
 
